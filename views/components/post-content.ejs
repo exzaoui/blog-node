@@ -1,0 +1,15 @@
+<div class="item">
+    <div class="item-header">
+        <a href="/posts/<%= post._id %>" class="item-header-image"><img
+                    src="/images/photos/image-15.jpg" alt=""></a>
+    </div>
+    <div class="item-content">
+        <h2><a href="/posts/<%= post._id %>"><%= post.title %></a></h2>
+        <span class="item-meta">
+            <span class="item-meta-item"><i class="material-icons">access_time</i><%= post.created_at %></span>
+            <a href="" class="item-meta-item"><i
+                        class="material-icons">chat_bubble_outline</i><%= post.pv %></a>
+        </span>
+        <%- post.content %>
+    </div>
+</div>

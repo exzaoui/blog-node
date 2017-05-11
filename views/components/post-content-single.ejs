@@ -1,0 +1,71 @@
+<!-- BEGIN #content -->
+<main id="content">
+
+    <!-- BEGIN .wrapper -->
+    <div class="wrapper">
+
+        <div class="ot-content-with-sidebar-right">
+
+            <div class="ot-main-page-content">
+
+                <!-- OPTIONAL PAGE TITLE -->
+                <div class="ot-title-block">
+                    <h2><%= post.title %></h2>
+                </div>
+                <div class="ot-content-block">
+                    <div class="ot-material-card ot-material-card-content" itemscope itemtype="http://schema.org/Blog">
+
+                        <div class="article-head">
+                            <div class="img-with-no-margin">
+                                <img itemprop="image" src="/images/photos/image-45.jpg" alt="" />
+                            </div>
+                            <h1 itemprop="headline">VMCwZyfp64uo8eB2EA5RPthczOkTrb</h1>
+                            <meta itemprop="datePublished" content="2016-04-01" />
+                            <meta itemprop="dateModified" content="2016-04-01" />
+                            <div class="article-head-meta">
+                                <a href="##" class="meta-item"><i class="material-icons">person</i><span itemprop="author"> </span></a>
+                                <span class="meta-item"><i class="material-icons">access_time</i><%= post.created_at %></span>
+                                <a href="" class="meta-item"><i class="material-icons">chat_bubble_outline</i><%= post.commentsCount %></a>
+
+                            </div>
+                        </div>
+
+                        <div class="shortcode-content" itemprop="mainEntityOfPage" style="word-break:break-all; "><%- post.content %> </div>
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="ot-content-block">
+                    <div class="ot-material-card ot-material-card-content">
+                        <div class="ot-title-block">
+                            <h2>Submit an answer</h2>
+                        </div>
+                        <div class="comment-contact-form">
+
+                            <div id="respond">
+                                <form action="post.php" id="commentform">
+
+
+                                    <p class="contact-form-comment">
+                                        <label class="label-input">
+                                            <textarea name="comment" placeholder="Your Comment"></textarea>
+                                        </label>
+                                    </p>
+                                    <p class="form-submit">
+                                        <input type="hidden" name="p" value="105239">
+                                        <button id="submit" class="submit mdl-js-button mdl-js-ripple-effect" name="posted">Post a Comment</button>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+

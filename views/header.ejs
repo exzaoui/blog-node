@@ -1,0 +1,155 @@
+
+<!DOCTYPE HTML>
+<!-- BEGIN html -->
+<html lang="en">
+<!-- BEGIN head -->
+
+<head>
+    <title>Materialzine | Homepage</title>
+
+    <!-- Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <!-- Stylesheets -->
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin,latin-ext" />
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link type="text/css" rel="stylesheet" href="/css/reset.min.css" />
+    <link type="text/css" rel="stylesheet" href="/css/material.min.css" />
+    <link type="text/css" rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="/css/weather-icons.min.css" />
+    <link type="text/css" rel="stylesheet" href="/css/owl.carousel.min.css" />
+    <link type="text/css" rel="stylesheet" href="/css/shortcodes.min.css" />
+    <link type="text/css" rel="stylesheet" href="/css/main-stylesheet.min.css" />
+    <link type="text/css" rel="stylesheet" href="/css/custom-styles.min.css" />
+    <link type="text/css" rel="stylesheet" href="/css/responsive.min.css" />
+
+    <!-- END head -->
+</head>
+
+<!-- BEGIN body -->
+<!--	<body class="ot_debug">-->
+
+<body class="ot-menu-will-follow">
+
+
+
+<!-- BEGIN #boxed -->
+<div id="boxed">
+
+    <!-- BEGIN #header -->
+    <header id="header">
+        <!-- BEGIN .wrapper -->
+        <div class="wrapper">
+
+            <div class="header-blocks">
+
+                <div class="header-blocks-logo">
+                    <!--							<h1 id="header-logo-text"><a href="index.php">Materialzine</a></h1>-->
+
+                    <a href="/" id="header-logo-image"><img src="/images/logo.png" data-ot-retina="/images/logo@2x.png" alt="" /></a>
+                </div>
+
+                <div class="header-blocks-aspace">
+                    <a href="" ><img src="/images/aspace-1.jpg" alt="" /></a>
+                </div>
+
+            </div>
+
+
+            <div class="main-menu-placeholder">
+                <nav id="main-menu" class="otm otm-follow">
+                    <ul class="load-responsive">
+                        <li class="active"><a href="/">Homepage</a></li>
+                    <% if (user) { %>
+                        <li><a href="/posts?author=<%= user._id %>"><span><%= user.name %></span></a>
+                            <ul class="sub-menu">
+                                <li><a href="/posts/create">Create</a></li>
+                                <li><a href="/signout">Logout</a></li>
+                            </ul>
+                        </li>
+                    <% } else { %>
+                        <li><a href=""><span>Account</span></a>
+                            <ul class="sub-menu">
+                                <li><a href="/signin">Sign in</a></li>
+                                <li><a href="/signup">Sign up</a></li>
+                            </ul>
+                        </li>
+                    <% } %>
+
+                    </ul>
+                </nav>
+                <a href="index.php#search-header" class="search-header-bull"><i class="material-icons">search</i></a>
+            </div>
+
+            <!-- END .wrapper -->
+        </div>
+
+        <div id="search-overlay">
+            <div id="search-overlay-inner">
+
+                <form action="search.php" method="get">
+                    <input type="text" name="q" value="" placeholder="Search something..">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <div>
+                    <strong class="category-listing-title"><span>Search Results</span></strong>
+
+                    <div class="ot-content-block">
+
+                        <div class="ot-grid-article-list otg otg-items-3 otg-h-30">
+
+                            2
+                            <div class="otg-item">
+                                <div class="ot-material-card">
+                                    <a href="#" class="item-header"><img src="/images/photos/image-4.jpg" alt=""/></a>
+                                    <div class="item-content">
+                                        <h3><a href="#">GDG Mascara Blog 1</a></h3>
+                                        <span class="meta-items">
+                <a href="#" class="meta-items-i"><i class="material-icons">person</i>wail</a>
+                <i class="meta-items-i"><i class="material-icons">access_time</i>22016-12-14 00:00:00</i>
+              </span>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    </div>
+                                    <div class="item-footer">
+                                        <a href="post.php?id=1" class="card-footer-button">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="otg-item">
+                                <div class="ot-material-card">
+                                    <a href="#" class="item-header"><img src="/images/photos/image-4.jpg" alt=""/></a>
+                                    <div class="item-content">
+                                        <h3><a href="#">GDG Mascara Blog 2</a></h3>
+                                        <span class="meta-items">
+                <a href="#" class="meta-items-i"><i class="material-icons">person</i>wail</a>
+                <i class="meta-items-i"><i class="material-icons">access_time</i>22016-12-14 04:10:24</i>
+              </span>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    </div>
+                                    <div class="item-footer">
+                                        <a href="post.php?id=2" class="card-footer-button">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- END #header -->
+    </header>

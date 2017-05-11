@@ -1,0 +1,57 @@
+<%- include('header') %>
+<main id="content">
+
+<div class="wrapper">
+<div class="ot-main-page-content">
+<div class="ot-content-block">
+<div class="otg otg-items-1 otg-h-30 otg-v-30">
+<div class="otg-item">
+<div class="ot-material-card ot-material-card-content">
+<div class="ot-title-block">
+    <h2>Sign Up</h2>
+</div>
+<div class="comment-contact-form">
+    <div id="respond">
+        <form class="ui form segment" method="post" enctype="multipart/form-data">
+        <p class="contact-form-user">
+                <label class="label-input">
+                    <input type="text" required placeholder="First Name" name="name" value=""/>
+                </label>
+            </p>
+
+            <p class="contact-form-user">
+                <label class="label-input">
+                    <input type="password" required placeholder="Password" name="password" value=""/>
+                </label>
+            </p>
+            <p class="contact-form-user">
+                <label class="label-input">
+                    <input type="password" required placeholder="Cofirm Password" name="repassword" value=""/>
+                </label>
+            </p>
+            <input type="hidden" name="gender" value="m">
+            <p class="contact-form-user">
+                <label class="label-input">Avatar
+                    <input type="file" required name="avatar"/>
+                </label>
+            </p>
+            <p class="contact-form-user">
+                <label class="label-input">Bio
+                    <textarea name="bio" rows="5" v-model="user.bio"></textarea>
+                </label>
+            </p>
+            <p class="form-submit">
+                <button name="registered" type="submit" id="submit" class="submit mdl-js-button mdl-js-ripple-effect">Signup</button>
+            </p>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- END .wrapper -->
+</div>
+<!-- BEGIN #content -->
+</main>

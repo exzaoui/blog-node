@@ -1,0 +1,46 @@
+<%- include('header') %>
+
+<!-- BEGIN #content -->
+<main id="content">
+    <!-- BEGIN .wrapper -->
+    <div class="wrapper">
+
+        <div class="ot-content-with-sidebar-right">
+
+            <div class="ot-main-page-content">
+
+                <div class="ot-title-block">
+                    <h2>Latest blog articles
+                    </h2>
+                </div>
+
+                <div class="ot-content-block">
+
+                    <div class="ot-articles-material-blog-list">
+
+                        <% posts.forEach(function (post) { %>
+                        <%- include('components/post-content', { post: post }) %>
+                        <% }) %>
+
+                    </div>
+                    <!-- <div class="ot-main-panel-pager">
+                        <a class="prev page-numbers" href="index.php?page=0"><i class="fa fa-angle-double-left"></i>Previous</a>
+                        <span class="page-numbers current">1</span><a class="page-numbers" href="index.php?page=2">2</a>
+                        <a class="next page-numbers" href="index.php?page=2">Next<i
+                                    class="fa fa-angle-double-right"></i></a>
+                    </div> -->
+
+                </div>
+
+            </div>
+
+            <%- include('components/aside-footer') %>
+
+        </div>
+
+        <!-- END .wrapper -->
+    </div>
+
+
+</main>
+<%- include('footer') %>
